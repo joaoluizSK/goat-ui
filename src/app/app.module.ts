@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { GoatInformationComponent } from './goat-information/goat-information.component';
 import { GoatComponent } from './goat/goat.component';
+import { ChartsModule } from 'ng2-charts';
 
 
 const appRoutes: Routes = [
@@ -21,7 +22,8 @@ const appRoutes: Routes = [
     BrowserModule,
     RouterModule.forRoot(
       appRoutes
-    )
+    ),
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

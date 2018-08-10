@@ -15,7 +15,9 @@ export class GoatComponent implements OnInit {
   }
 
   calculateGoatAndSendToDetails() {
-    this.router.navigate(['/info']);
+    setTimeout(() => {
+      this.router.navigate(['/info']);
+    }, 1000);
   }
 
 }

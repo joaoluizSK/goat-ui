@@ -3,4 +3,51 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  height: 95%;
+  width: 100%;
 }
+
+.div-information {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  height: 100%;
+}
+
+.div-statistics {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  height: 90%;
+}
+
+.radar-chart {
+  display: block;
+  background-color: #eeeedd;
+  margin: 5px
+}
+
+.bar-chart {
+  display: block;
+  background-color: #eeeedd;
+  margin: 5px
+}
+
+.winner-photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  /*visibility: hidden;*/
+  /*opacity: 0;*/
+  /*transition: visibility 0s, opacity 0.5s linear;*/
+}
+
+/*.winner-photo:hover {*/
+  /*visibility: visible;*/
+  /*opacity: 1;*/
+/*}*/
+
+

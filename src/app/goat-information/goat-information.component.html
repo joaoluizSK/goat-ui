@@ -1,11 +1,41 @@
 <div class="div-result">
   <div>
     <span class="big-title">The G.O.A.T</span>
-    <img src="/assets/images/goat-icon.jpg" width="100" height="100" style="margin-left: 10px"/>
+    <iframe src="https://giphy.com/embed/cMso9wDwqSy3e" width="100" height="100" frameBorder="0" class="giphy-embed"
+            allowFullScreen>
+    </iframe>
   </div>
-  <div id="statistics">
+  <div class="div-information">
+    <div class="div-statistics">
+      <div class="radar-chart">
+        <canvas baseChart
+                [datasets]="radarChartData"
+                [labels]="radarChartLabels"
+                [chartType]="radarChartType">
+
+        </canvas>
+      </div>
+      <div class="bar-chart">
+        <canvas baseChart
+                [datasets]="barChartData"
+                [labels]="barChartLabels"
+                [options]="barChartOptions"
+                [legend]="barChartLegend"
+                [chartType]="barChartType">
+
+        </canvas>
+      </div>
+    </div>
+    <div class="winner-photo">
+      <div *ngIf="winner === 'Brady'">
+        <iframe src="https://giphy.com/embed/tIXVwkmqewISs" width="400" height="400" frameBorder="0">
+        </iframe>
+      </div>
+      <div *ngIf="winner === 'Manning'">
+        <iframe src="https://giphy.com/embed/Qe7mSZZPRTDLa" width="400" height="400" frameBorder="0">
+        </iframe>
+      </div>
+    </div>
   </div>
-  <!--<div id="chart"><svg width="600" height="300"/>-->
-  <!--</div>-->
 </div>
 
