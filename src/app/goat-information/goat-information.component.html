@@ -7,7 +7,7 @@
   </div>
   <div class="div-information">
     <div class="div-statistics">
-      <div class="radar-chart">
+      <div class="radar-chart" *ngIf="radarChartData">
         <canvas baseChart
                 [datasets]="radarChartData"
                 [labels]="radarChartLabels"
@@ -15,7 +15,7 @@
 
         </canvas>
       </div>
-      <div class="bar-chart">
+      <div class="bar-chart" *ngIf="barChartData">
         <canvas baseChart
                 [datasets]="barChartData"
                 [labels]="barChartLabels"
@@ -27,11 +27,11 @@
       </div>
     </div>
     <div class="winner-photo">
-      <div *ngIf="winner === 'Brady'">
+      <div *ngIf="winner === 'Tom BradyT. Brady'">
         <iframe src="https://giphy.com/embed/tIXVwkmqewISs" width="400" height="400" frameBorder="0">
         </iframe>
       </div>
-      <div *ngIf="winner === 'Manning'">
+      <div *ngIf="winner === 'Peyton ManningP. Manning'">
         <iframe src="https://giphy.com/embed/Qe7mSZZPRTDLa" width="400" height="400" frameBorder="0">
         </iframe>
       </div>

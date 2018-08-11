@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { GoatInformationComponent } from './goat-information/goat-information.component';
 import { GoatComponent } from './goat/goat.component';
 import { ChartsModule } from 'ng2-charts';
+import {GoatService} from './goat.service';
+import {HttpClientModule} from '@angular/common/http';
 
 
 const appRoutes: Routes = [
@@ -20,12 +22,13 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot(
       appRoutes
     ),
     ChartsModule
   ],
-  providers: [],
+  providers: [GoatService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
